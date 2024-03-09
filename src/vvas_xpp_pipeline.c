@@ -133,7 +133,7 @@ int32_t xlnx_kernel_init(VVASKernel *handle)
     else
 	kernel_priv->scale_b = json_number_value(val);
     printf("Resize: scale_b=%f\n", kernel_priv->scale_b);
-
+    printf("hellowolrd\n");
     val = json_object_get (jconfig, "debug_level");
     if (!val || !json_is_integer (val))
         kernel_priv->log_level = LOG_LEVEL_WARNING;
